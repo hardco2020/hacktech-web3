@@ -43,7 +43,7 @@ export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
       <Image
         borderRadius="full"
         boxSize="40px"
-        src="https://100k-faces.glitch.me/random-image"
+        src={props.img}
         alt={`Avatar of ${props.name}`}
       />
       <Text fontWeight="medium">{props.name}</Text>
@@ -52,7 +52,7 @@ export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
   );
 };
 
-const ArticleList = ({ClassName,description,teacher,label}) => {
+const ArticleList = ({ClassName,description,teacher,label , classImage, teacherImage ,unsubmit}) => {
   return (
     <Container maxW={'7xl'} p="12">
       <Box
@@ -75,7 +75,7 @@ const ArticleList = ({ClassName,description,teacher,label}) => {
               <Image
                 borderRadius="lg"
                 src={
-                  'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
+                 classImage
                 }
                 alt="some good alt text"
                 objectFit="contain"
@@ -113,9 +113,9 @@ const ArticleList = ({ClassName,description,teacher,label}) => {
             fontSize="lg">
             {description}
           </Text>
-          <BlogAuthor name={teacher}/>
+          <BlogAuthor name={teacher} img={teacherImage}/>
           <Button mt={3} colorScheme='teal' >See Homework</Button>
-          <Button mt={3} disabled>Unsubmitted 4 </Button>
+          <Button mt={3} disabled>Unsubmitted {unsubmit} </Button>
         </Box>
       </Box>
       
