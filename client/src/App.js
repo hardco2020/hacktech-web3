@@ -6,6 +6,8 @@ import Profile from './page/Profile/Profile';
 import Register from './page/Register';
 import SplashScreen from './page/SplashScreen/SplashScreen';
 import { AuthProvider } from './components/AuthContext/AuthContext';
+import TeacherHomeworks from './components/TeacherHomeworks/TeacherHomeworks';
+import CheckResult from './components/CheckResult/CheckResult';
 function App() {
   return (
     <AuthProvider>
@@ -14,10 +16,12 @@ function App() {
           <Route path='/splash' element={<SplashScreen />} />
           <Route path='/profile' element={<Profile />} />
           <Route path='/' element={<Home />} />
+          <Route path=':classId/teacherhomework' element={<TeacherHomeworks />} />
           <Route path=':classId/homework' element={<Homework />} />
           <Route path='/home' element={<Home />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
+          <Route path=":classId/result" element={<CheckResult/>} />
         </Routes>
       </BrowserRouter>
     </AuthProvider>

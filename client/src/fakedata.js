@@ -79,30 +79,45 @@ export const fakeHomeworks = [
     },
 ]
 
-export const fakeTeacherworks = [
+export const fakeTeacherhomeworks = [
     {
         id:1,
-        fileURL: "Qmd93UmuvHb5m5MTjhrhLwBVLcdJ8WjZiW9Qc9PCRpX5Zv",
+        fileURL: "https://cloudflare-ipfs.com/ipfs/Qmd93UmuvHb5m5MTjhrhLwBVLcdJ8WjZiW9Qc9PCRpX5Zv",
         fileName: "M03434442_HW3.txt",
         studentName: "Lindsey James",
     },
     {
         id:2,
-        fileURL: "QmS6JhwQ9gFCUG5T6VoHK19oj8nDfV7ZuAW2AtpSRtcBym",
+        fileURL: "https://cloudflare-ipfs.com/ipfs/QmS6JhwQ9gFCUG5T6VoHK19oj8nDfV7ZuAW2AtpSRtcBym",
         fileName: "M03434442_HW3.txt",
         studentName: "Alen Walker",
     },
     {
         id:3,
-        fileURL: "Qma59ajrNtYLyScTT8SAXLEvAvGYCqvP8UJyWpFaduExbi",
+        fileURL: "https://cloudflare-ipfs.com/ipfs/Qma59ajrNtYLyScTT8SAXLEvAvGYCqvP8UJyWpFaduExbi",
         fileName: "M03434442_HW2.txt",
         studentName: "Danny Roseberry",
     },
     {
         id:4,
-        fileURL: "QmVRHXUaX8d1fPfFbNjxxQoQazw5mD7tw94QqehysTtssG",
+        fileURL: "https://cloudflare-ipfs.com/ipfs/QmVRHXUaX8d1fPfFbNjxxQoQazw5mD7tw94QqehysTtssG",
         fileName: "M03434442_HW1.txt",
         studentName: "Jessica Riley",
     },
 
+]
+
+export const plagiarism = [
+    {
+        id:1,
+        fileURL: "https://cloudflare-ipfs.com/ipfs/Qmd93UmuvHb5m5MTjhrhLwBVLcdJ8WjZiW9Qc9PCRpX5Zv",
+        fileName: "M03434442_HW3.txt",
+        studentName: "Lindsey James",
+    },
+    {
+        id:4,
+        fileURL: "https://cloudflare-ipfs.com/ipfs/QmVRHXUaX8d1fPfFbNjxxQoQazw5mD7tw94QqehysTtssG",
+        fileName: "M03434442_HW1.txt",
+        studentName: "Jessica Riley",
+    },
 ]
