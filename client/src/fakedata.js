@@ -58,7 +58,7 @@ export const fakeHomeworks = [
         id:1,
         homeworkName: "HW4 - Journal",
         description: "Please write a short paragraph in simplified Chinese about your family.",
-        currentFile: "M03434442_HW2_PDF",
+        currentFile: "M03434442_HW3.txt",
     },
     {
         id:2,
@@ -69,12 +69,40 @@ export const fakeHomeworks = [
         id:3,
         homeworkName: "HW2 - Writing Practice",
         description: "Please write a short paragraph in Traditional Chinese (NOT simplified) about a non-academic hobby.",
-        currentFile: "M03434442_HW2_PDF",
+        currentFile: "M03434442_HW2.txt",
     },
     {
         id:4,
         homeworkName: "HW1 - Introduction",
         description: "Please upload a 500 word introduction about yourself in Chinese. Will be presentally orally during class.",
-        currentFile: "M03434442_HW1_PDF",
+        currentFile: "M03434442_HW1.txt",
     },
+]
+
+export const fakeTeacherworks = [
+    {
+        id:1,
+        fileURL: "Qmd93UmuvHb5m5MTjhrhLwBVLcdJ8WjZiW9Qc9PCRpX5Zv",
+        fileName: "M03434442_HW3.txt",
+        studentName: "Lindsey James",
+    },
+    {
+        id:2,
+        fileURL: "QmS6JhwQ9gFCUG5T6VoHK19oj8nDfV7ZuAW2AtpSRtcBym",
+        fileName: "M03434442_HW3.txt",
+        studentName: "Alen Walker",
+    },
+    {
+        id:3,
+        fileURL: "Qma59ajrNtYLyScTT8SAXLEvAvGYCqvP8UJyWpFaduExbi",
+        fileName: "M03434442_HW2.txt",
+        studentName: "Danny Roseberry",
+    },
+    {
+        id:4,
+        fileURL: "QmVRHXUaX8d1fPfFbNjxxQoQazw5mD7tw94QqehysTtssG",
+        fileName: "M03434442_HW1.txt",
+        studentName: "Jessica Riley",
+    },
+
 ]

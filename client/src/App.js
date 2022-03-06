@@ -6,7 +6,6 @@ import Profile from './page/Profile/Profile';
 import Register from './page/Register';
 import SplashScreen from './page/SplashScreen/SplashScreen';
 import { AuthProvider } from './components/AuthContext/AuthContext';
-
 function App() {
   return (
     <AuthProvider>
