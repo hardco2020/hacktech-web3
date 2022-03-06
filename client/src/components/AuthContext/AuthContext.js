@@ -26,6 +26,7 @@ export const AuthProvider = ({ children }) => {
       email: res.profileObj.email,
       imageUrl: res.profileObj.imageUrl,
       token: res.tokenObj.id_token,
+      isTeacher: true,
     });
 
     // TODO: fix later
