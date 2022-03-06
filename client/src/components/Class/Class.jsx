@@ -12,6 +12,7 @@ import {
   Container,
   Button,
 } from '@chakra-ui/react';
+import { Link as Route}  from 'react-router-dom';
 
 interface IBlogTags {
   tags: Array<string>;
@@ -52,7 +53,7 @@ export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
   );
 };
 
-const ArticleList = ({ClassName,description,teacher,label , classImage, teacherImage ,unsubmit}) => {
+const ArticleList = ({ classId,ClassName,description,teacher,label , classImage, teacherImage ,unsubmit}) => {
   return (
     <Container maxW={'7xl'} p="12">
       <Box
@@ -114,7 +115,9 @@ const ArticleList = ({ClassName,description,teacher,label , classImage, teacherI
             {description}
           </Text>
           <BlogAuthor name={teacher} img={teacherImage}/>
-          <Button mt={3} colorScheme='teal' >See Homework</Button>
+          <Route to={`/${classId}/homework`}>
+            <Button mt={3} colorScheme='teal' isFullWidth>See Homework</Button>
+          </Route>
           <Button mt={3} disabled>Unsubmitted {unsubmit} </Button>
         </Box>
       </Box>

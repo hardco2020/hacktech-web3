@@ -7,7 +7,7 @@ const Classes = () => {
   return (
     <div>
         { fakeClass.map((c)=>(
-            <Class key={c.id} ClassName={c.className} teacher={c.teacher} description={c.description} label={c.label} classImage={c.classImage} unsubmit = {c.unsubmit} teacherImage={c.teacherImage}/>
+            <Class key={c.id} ClassName={c.className} teacher={c.teacher} description={c.description} label={c.label} classImage={c.classImage} unsubmit = {c.unsubmit} teacherImage={c.teacherImage} classId={c.id}/>
         ))}
     </div>
   )
