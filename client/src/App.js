@@ -9,7 +9,6 @@ import Login from "./page/Login";
 import Profile from "./page/Profile/Profile";
 import Register from "./page/Register";
 import SplashScreen from "./page/SplashScreen/SplashScreen";
-
 function App() {
   return (
     <BrowserRouter>

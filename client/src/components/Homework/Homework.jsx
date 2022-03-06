@@ -14,9 +14,9 @@ import {
     WarningTwoIcon
   } from '@chakra-ui/icons';
   import { useRef, useState } from 'react';
-  import HomeWorkImage from '../../assets/homework.png'
-  export default function Homework({description,homeworkName,id,currentFile}) {
-    
+  import HomeWorkImage from '../../assets/homework.png';
+  import { create,  urlSource } from 'ipfs-http-client'
+  export default function Homework({description,homeworkName,id,currentFile,ipfs}) {
     //Upload file
     const inputFileRef = useRef(null) 
     const [currentUploadFile,setCurrentUploadFile] = useState(currentFile);
@@ -30,10 +30,15 @@ import {
     //Handle the API Upload 
     const handleSubmit = async(e) =>{
         setIsUploading(true);
-        await setTimeout(() => {
-            setCurrentUploadFile(uploadFile.name);
-            setIsUploading(false);
-        }, 3000);
+        let fd = new FormData();
+        fd.append('file',uploadFile)
+        const file = await ipfs.add(urlSource('https://i.imgur.com/5lid4AQ.jpg'));
+        console.log(file);
+        //     setCurrentUploadFile(uploadFile.name);
+        //     setIsUploading(false);
+        // }, 3000);
+        setCurrentUploadFile(uploadFile.name);
+        setIsUploading(false);
     }
     return (
       <Center py={6}>
