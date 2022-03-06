@@ -143,7 +143,7 @@ import {
                 }}>
                 Upload file
               </Button>
-              <input type='file' id='file' ref={inputFileRef} onChange={(e)=>setUploadFile(e.target.files[0])} style={{display: 'none'}}/>
+              <input type='file' id='file'  accept="application/pdf" ref={inputFileRef} onChange={(e)=>setUploadFile(e.target.files[0])} style={{display: 'none'}}/>
               <Button
                 flex={1}
                 fontSize={'sm'}
