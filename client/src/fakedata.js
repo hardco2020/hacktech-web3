@@ -52,3 +52,29 @@ export const fakeClass = [
         unsubmit:1,
     },
 ]
+
+export const fakeHomeworks = [
+    {
+        id:1,
+        homeworkName: "HW4 - Writing Practice",
+        description: "Please write a thesis in Chinese regarding to your family.",
+        currentFile: "M03434442_HW2_PDF",
+    },
+    {
+        id:2,
+        homeworkName: "HW3 - Korean Culture",
+        description: "Please do a research about korean culture, and the total words have to exceed 1000 words.",
+    },
+    {
+        id:3,
+        homeworkName: "HW2 - Writing Practice",
+        description: "Please write a thesis in Chinese regarding to your hobbit, and why you like to do it.",
+        currentFile: "M03434442_HW2_PDF",
+    },
+    {
+        id:4,
+        homeworkName: "HW1 - Introduction",
+        description: "Please prepare a 500 word introduction about yourself in chinese.",
+        currentFile: "M03434442_HW1_PDF",
+    },
+]
