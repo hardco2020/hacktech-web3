@@ -29,10 +29,8 @@ import {
 
     //Handle the API Upload 
     const handleSubmit = async(e) =>{
-        console.log("test");
         setIsUploading(true);
         await setTimeout(() => {
-            console.log('Hello, World!')
             setCurrentUploadFile(uploadFile.name);
             setIsUploading(false);
         }, 3000);

@@ -5,7 +5,7 @@ const Homeworks = () => {
   return (
     <div>
         { fakeHomeworks.map((h)=>(
-           <Homework id={h.id} homeworkName={h.homeworkName} description={h.description} currentFile={h.currentFile} />
+           <Homework key={h.id} id={h.id} homeworkName={h.homeworkName} description={h.description} currentFile={h.currentFile} />
         ))}
     </div>
   )
