@@ -13,6 +13,7 @@ import { useAuth } from '../AuthContext/AuthContext';
 
 export default function ProfileCard() {
   const authContext = useAuth();
+  console.log('profile: ', authContext.user);
   return (
     <Center py={6}>
       <Box
