@@ -1,12 +1,12 @@
 import React from 'react'
-import Assignment from '../../components/Homework/Homework';
+import Homeworks from '../../components/Homeworks/Homeworks';
 import Navbar from '../../components/Navbar/Navbar';
 
 const Homework = () => {
   return (
     <div>
         <Navbar/>
-        <Assignment/>
+        <Homeworks/>
     </div>
   )
 }

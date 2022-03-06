@@ -12,8 +12,8 @@ import {
     PopoverTrigger,
     PopoverContent,
     useColorModeValue,
-    useBreakpointValue,
     useDisclosure,
+    Img,
   } from '@chakra-ui/react';
   import {
     HamburgerIcon,
@@ -22,6 +22,7 @@ import {
     ChevronRightIcon,
   } from '@chakra-ui/icons';
   import { Link as Route } from 'react-router-dom';
+  import logo from '../../assets/logo.png'
 
   export default function WithSubnavigation() {
     const { isOpen, onToggle } = useDisclosure();
@@ -51,18 +52,21 @@ import {
               aria-label={'Toggle Navigation'}
             />
           </Flex>
+          <Route to="/">
           <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-            <Text
+            {/* <Text
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
               fontFamily={'heading'}
               color={useColorModeValue('gray.800', 'white')}>
-              Logo
-            </Text>
+              logo
+            </Text> */}
+            <Img src={logo} boxSize={['50%','50%','25%','10%']} />
   
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
               <DesktopNav />
             </Flex>
           </Flex>
+          </Route>
   
           <Stack
             flex={{ base: 1, md: 0 }}
