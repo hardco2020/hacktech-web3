@@ -55,7 +55,7 @@ export default function ProfileCard() {
           color={useColorModeValue('gray.700', 'gray.400')}
           px={3}
         >
-          Hello everyone, I am a coding enthusiast!
+          Hello everyone, I am the professor of Chinese 101 
         </Text>
 
         <Stack align={'center'} justify={'center'} direction={'row'} mt={6}>
@@ -65,7 +65,7 @@ export default function ProfileCard() {
             bg={useColorModeValue('gray.50', 'gray.800')}
             fontWeight={'400'}
           >
-            #Computer Science
+            #Asian Study
           </Badge>
         </Stack>
 
@@ -88,7 +88,7 @@ export default function ProfileCard() {
           >
             Asian Study
           </Button>
-          <Button
+          {/* <Button
             flex={1}
             fontSize={'sm'}
             rounded={'full'}
@@ -105,9 +105,9 @@ export default function ProfileCard() {
             }}
           >
             Basic Economy
-          </Button>
+          </Button> */}
         </Stack>
-        <Stack mt={8} direction={'row'} spacing={4}>
+        {/* <Stack mt={8} direction={'row'} spacing={4}>
           <Button
             flex={1}
             fontSize={'sm'}
@@ -144,7 +144,7 @@ export default function ProfileCard() {
           >
             Science
           </Button>
-        </Stack>
+        </Stack> */}
       </Box>
     </Center>
   );

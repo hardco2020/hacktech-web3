@@ -61,6 +61,7 @@ const ArticleList = ({
   classImage,
   teacherImage,
   unsubmit,
+  classmate,
 }) => {
   console.log('teacher dashboard');
   return (
@@ -129,11 +130,11 @@ const ArticleList = ({
           {/* <BlogAuthor name={teacher} img={teacherImage} /> */}
           <Route to={`/${classId}/homework`}>
             <Button mt={3} colorScheme='teal' isFullWidth>
-              See Homework
+              Check submission
             </Button>
           </Route>
           <Button mt={3} disabled>
-            Unsubmitted {unsubmit}{' '}
+            Unsubmitted {unsubmit}{' '}/{classmate}
           </Button>
         </Box>
       </Box>

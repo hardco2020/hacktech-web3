@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import TeacherHomeworks from './components/TeacherHomeworks/TeacherHomeworks';
 import Homework from './page/Homework/Homework';
 import Home from './page/Home/Home';
 import TeacherDashboard from './page/TeacherDashboard/TeacherDashboard';
@@ -7,14 +6,13 @@ import Login from './page/Login';
 import Profile from './page/Profile/Profile';
 import Register from './page/Register';
 import SplashScreen from './page/SplashScreen/SplashScreen';
-import { AuthProvider } from './components/AuthContext/AuthContext';
-import TeacherHomeworks from './components/TeacherHomeworks/TeacherHomeworks';
 import CheckResult from './components/CheckResult/CheckResult';
 import { useAuth } from './components/AuthContext/AuthContext';
+import TeacherHomeworks from './components/TeacherHomeworks/TeacherHomeworks';
 
 function App() {
   const authContext = useAuth();
-
+  console.log(authContext.user);
   return (
     <BrowserRouter>
       <Routes>
@@ -24,7 +22,7 @@ function App() {
           path='/'
           element={authContext.user.isTeacher ? <TeacherDashboard /> : <Home />}
         />
-        <Route path=':classId/homework' element={<Homework />} />
+        <Route path=':classId/homework'element={authContext.user.isTeacher ? <TeacherHomeworks /> : <Homework /> }/>
         <Route path='/home' element={<Home />} />
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />

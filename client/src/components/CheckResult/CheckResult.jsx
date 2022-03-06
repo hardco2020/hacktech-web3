@@ -75,13 +75,13 @@ export default function CheckResult() {
                 top={'70px'}
               />
               <Text
-                fontSize={'lg'}
+                fontSize={'sm'}
                 fontFamily={'Caveat'}
                 position={'absolute'}
-                right={'-155px'}
+                right={'-85px'}
                 top={'55px'}
                 transform={'rotate(10deg)'}>
-                See how we calculate 
+                See calculation 
               </Text>
             </Box>
           </Stack>

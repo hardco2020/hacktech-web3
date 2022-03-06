@@ -1,11 +1,11 @@
 import React from 'react';
 import TeacherClass from '../TeacherClass/TeacherClass';
-import { fakeClass } from '../../fakedata';
+import { fakeTeacherClass } from '../../fakedata';
 
 const Classes = () => {
   return (
     <div>
-      {fakeClass.map((c) => (
+      {fakeTeacherClass.map((c) => (
         <TeacherClass
           key={c.id}
           ClassName={c.className}
@@ -16,6 +16,7 @@ const Classes = () => {
           unsubmit={c.unsubmit}
           teacherImage={c.teacherImage}
           classId={c.id}
+          classmate={c.classmate}
         />
       ))}
     </div>

@@ -53,6 +53,37 @@ export const fakeClass = [
     },
 ]
 
+export const fakeTeacherClass = [
+    {
+        id:1,
+        className: "Chinese101",
+        description: "Welcome to Language/Chinese 101: Introduction to Chinese! This course provides an introduction to Mandarin Chinese with a focus on spoken conversation using breakout rooms.",
+        teacher: "Lotus Perry",
+        teacherImage: "https://i.imgur.com/13QFQEM.jpg",
+        classImage:"https://i.imgur.com/eCY8RpZ.jpg",
+        label:[
+            "Chinese",
+            "Language"
+        ],
+        unsubmit:4,
+        classmate:20,
+    },
+    {
+        id:2,
+        className: "Chinese102",
+        description: "A senior-level course in learning Chinese",
+        teacher: "Johnny Riley",
+        teacherImage: "https://i.imgur.com/5lid4AQ.jpg",
+        classImage:"https://i.imgur.com/eCY8RpZ.jpg",
+        label:[
+            "Economy",
+            "Finance"
+        ],
+        unsubmit:2,
+        classmate:25,
+    },
+]
+
 export const fakeHomeworks = [
     {
         id:1,
@@ -83,8 +114,8 @@ export const fakeTeacherhomeworks = [
     {
         id:1,
         fileURL: "https://cloudflare-ipfs.com/ipfs/Qmd93UmuvHb5m5MTjhrhLwBVLcdJ8WjZiW9Qc9PCRpX5Zv",
-        fileName: "M03434442_HW3.txt",
-        studentName: "Lindsey James",
+        fileName: "file1.txt",
+        studentName: "旻昌 游",
     },
     {
         id:2,
@@ -111,8 +142,8 @@ export const plagiarism = [
     {
         id:1,
         fileURL: "https://cloudflare-ipfs.com/ipfs/Qmd93UmuvHb5m5MTjhrhLwBVLcdJ8WjZiW9Qc9PCRpX5Zv",
-        fileName: "M03434442_HW3.txt",
-        studentName: "Lindsey James",
+        fileName: "file1.txt",
+        studentName: "旻昌 游",
     },
     {
         id:4,
