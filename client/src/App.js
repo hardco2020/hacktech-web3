@@ -7,6 +7,9 @@ import Login from './page/Login';
 import Profile from './page/Profile/Profile';
 import Register from './page/Register';
 import SplashScreen from './page/SplashScreen/SplashScreen';
+import { AuthProvider } from './components/AuthContext/AuthContext';
+import TeacherHomeworks from './components/TeacherHomeworks/TeacherHomeworks';
+import CheckResult from './components/CheckResult/CheckResult';
 import { useAuth } from './components/AuthContext/AuthContext';
 
 function App() {
@@ -25,6 +28,7 @@ function App() {
         <Route path='/home' element={<Home />} />
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
+         <Route path=":classId/result" element={<CheckResult/>} />
       </Routes>
     </BrowserRouter>
   );

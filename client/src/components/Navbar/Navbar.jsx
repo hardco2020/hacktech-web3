@@ -14,6 +14,7 @@ import {
   useColorModeValue,
   useDisclosure,
   Img,
+  Avatar,
 } from '@chakra-ui/react';
 import {
   HamburgerIcon,
@@ -23,10 +24,11 @@ import {
 } from '@chakra-ui/icons';
 import { Link as Route } from 'react-router-dom';
 import logo from '../../assets/logo.png';
+import { useAuth } from '../AuthContext/AuthContext';
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
-
+  const authContext = useAuth();
   return (
     <Box>
       <Flex
@@ -76,7 +78,7 @@ export default function WithSubnavigation() {
           direction={'row'}
           spacing={6}
         >
-          <Route to='/login'>
+          { authContext ? <Avatar src={authContext.user.imageUrl}/> : <><Route to='/login'>
             <Button
               as={'a'}
               fontSize={'sm'}
@@ -102,6 +104,7 @@ export default function WithSubnavigation() {
               Sign Up
             </Button>
           </Route>
+          </>} 
         </Stack>
       </Flex>
 

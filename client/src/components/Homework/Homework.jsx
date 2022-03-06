@@ -15,7 +15,7 @@ import {
   } from '@chakra-ui/icons';
   import { useRef, useState } from 'react';
   import HomeWorkImage from '../../assets/homework.png';
-  import { create,  urlSource } from 'ipfs-http-client'
+  import { urlSource } from 'ipfs-http-client'
   export default function Homework({description,homeworkName,id,currentFile,ipfs}) {
     //Upload file
     const inputFileRef = useRef(null) 
@@ -34,9 +34,6 @@ import {
         fd.append('file',uploadFile)
         const file = await ipfs.add(urlSource('https://i.imgur.com/5lid4AQ.jpg'));
         console.log(file);
-        //     setCurrentUploadFile(uploadFile.name);
-        //     setIsUploading(false);
-        // }, 3000);
         setCurrentUploadFile(uploadFile.name);
         setIsUploading(false);
     }
@@ -148,7 +145,7 @@ import {
                 }}>
                 Upload file
               </Button>
-              <input type='file' id='file'  accept="application/pdf" ref={inputFileRef} onChange={(e)=>setUploadFile(e.target.files[0])} style={{display: 'none'}}/>
+              <input type='file' id='file'  accept="application/txt" ref={inputFileRef} onChange={(e)=>setUploadFile(e.target.files[0])} style={{display: 'none'}}/>
               <Button
                 flex={1}
                 fontSize={'sm'}
